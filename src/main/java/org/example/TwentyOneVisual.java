@@ -33,7 +33,7 @@ public class TwentyOneVisual {
             System.out.println("You busted! Computer wins.");
         } else if (game.getComputerScore() > 21 || game.getPlayerScore() > game.getComputerScore()) {
             System.out.println("You win!");
-            game.updateBalance(10); // Reward for winning
+            game.updateBalance(10);
         } else {
             System.out.println("Computer wins!");
         }

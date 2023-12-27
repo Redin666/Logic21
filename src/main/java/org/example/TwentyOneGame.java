@@ -16,7 +16,7 @@ public class TwentyOneGame {
         playerHand = new ArrayList<>();
         computerHand = new ArrayList<>();
         gameOver = false;
-        balance = 100; // Starting balance
+        balance = 100;
 
         initializeDeck();
         shuffleDeck();
@@ -71,7 +71,7 @@ public class TwentyOneGame {
             playerHand.add(drawCard());
             if (getPlayerScore() > 21) {
                 gameOver = true;
-                balance -= 10; // Penalty for busting
+                balance -= 10;
             }
         }
     }
